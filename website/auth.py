@@ -18,6 +18,10 @@ def logout():
 def doctor():
     return render_template("doctor.html")
 
+@auth.route('/admin_actions')
+def admin_actions():
+    return render_template("admin_actions.html")
+
 @auth.route('/receptionist')
 def receptionist():
     return render_template("receptionist.html")
