@@ -22,6 +22,18 @@ def doctor():
 def admin_actions():
     return render_template("admin_actions.html")
 
+@auth.route('/add_doctor')
+def add_doctor():
+    return render_template("add_doctor.html")
+
+@auth.route('/add_admin')
+def add_admin():
+    return render_template("add_admin.html")
+
+@auth.route('/add_receptionist')
+def add_receptionist():
+    return render_template("add_receptionist.html")
+
 @auth.route('/receptionist')
 def receptionist():
     return render_template("receptionist.html")

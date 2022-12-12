@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+{% block title %}Add Admin{% endblock %}
+
+{% block content %}
+
+<h2 align="center" >Admins Main Page</h2>
+
+<h3 align="center" style="margin-top: 30px;">Creating a Admin account</h3>
+
+
+ <body>
+    <div class="row">
+        <div class="column" style="float: left; width: 50%;">
+            <form method="POST" style="display: block; margin-top: 50px; margin-left: auto; margin-right: auto;max-width: 70%;">
+              <h4 align="center">Enter Admin Credentials</h4>
+              <div class="form-group" style="display: block; margin-top: 50px;">
+                <label for="Name">Full Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="Name"
+                  name="Name"
+                  placeholder="Enter Full Name"
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Email ID</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  placeholder="Enter Email ID"
+                />
+              </div>
+              <div class="form-group">
+                <label for="password1">Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="password1"
+                  name="password1"
+                  placeholder="Enter password"
+                />
+              </div>
+              <div class="form-group">
+                <label for="password2">Password (Confirm)</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="password2"
+                  name="password2"
+                  placeholder="Confirm password"
+                />
+              </div>
+              <br />
+              <button type="submit" class="btn btn-primary" style="display: block; margin-left: auto; margin-right: auto;">Submit</button>
+            </form>
+        </div>
+        <div class="column" style="float:inline-end; width: 50%;">
+            <img src="{{url_for('static', filename='admin.png')}}" style="max-width: 55%; margin-top: 120px; margin-left: 80px;" />
+        </div>
+    </div>
+ </body>
+
+{% endblock %}
