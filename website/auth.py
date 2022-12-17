@@ -34,6 +34,30 @@ def add_admin():
 def add_receptionist():
     return render_template("add_receptionist.html")
 
+@auth.route('/receptionist_actions')
+def receptionist_actions():
+    return render_template("receptionist_actions.html")
+
+@auth.route('/register_patient')
+def register_patient():
+    return render_template("register_patient.html")
+
+@auth.route('/patient_list')
+def patient_list():
+    return render_template("patient_list.html")
+
+@auth.route('/view_appointments')
+def view_appointments():
+    return render_template("view_appointments.html")
+
+@auth.route('/doctor_actions')
+def doctor_actions():
+    return render_template("doctor_actions.html")
+
+@auth.route('/fill_questionnare')
+def fill_questionnare():
+    return render_template("fill_questionnare.html")
+
 @auth.route('/receptionist')
 def receptionist():
     return render_template("receptionist.html")

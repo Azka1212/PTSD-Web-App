@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block title %}Admin Login{% endblock %}
+
+{% block content %}
+
+<div>
+  <img src="{{url_for('static', filename='user.jpeg')}}" style="display: block; margin-left: auto; margin-right: auto; max-width: 75%; margin-top: 30px;" />
+</div>
+
+
+<form method="POST" style="display: block; margin-left: auto; margin-right: auto;max-width: 50%;">
+    <h3 align="center">Patient List</h3>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input
+        type="password"
+        class="form-control"
+        id="password"
+        name="password"
+        placeholder="Enter password"
+      />
+    </div>
+    <br />
+    <button type="submit" class="btn btn-primary">Login</button>
+  </form>
+{% endblock %}

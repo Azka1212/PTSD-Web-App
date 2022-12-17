@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}Receptionist Actions{% endblock %}
+
+{% block content %}
+
+<div>
+  <img src="{{url_for('static', filename='Receptionist.png')}}" style="display: block; margin-left: auto; margin-right: auto; max-width: 25%; margin-top: 30px;" />
+</div>
+
+<h2 align="center" >Receptionist Main Page</h2>
+
+<h3 align="center" style="margin-top: 30px;">Choose An Action To Perform:</h3>
+
+<div class="container">
+    <p align="center" style="margin-top: 30px;">
+        <a href=register_patient ><button class="btn btn-primary btn-lg" style="margin-left: auto; margin-right: 30px; height:75px;width:150px">Register Patient</button></a>
+        <a href=patient_list ><button class="btn btn-primary btn-lg" style="margin-left: auto; margin-right: auto; height:75px;width:150px">View Patient List</button></a>
+        <a href=view_appointments ><button class="btn btn-primary btn-lg" style="margin-left: 30px; margin-right: auto; height:75px;width:150px">View Appointments</button></a>
+        <a href=add_admin ><button class="btn btn-primary btn-lg" style="margin-left: 30px; margin-right: auto; height:75px;width:150px">Add Doctors</button></a>
+    </p>
+</div>
+
+
+{% endblock %}
